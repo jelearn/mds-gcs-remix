@@ -1,0 +1,6 @@
+[submodule "grepular-claude-sandbox"]
+	path = grepular-claude-sandbox
+	url = https://gitlab.com/grepular/claude-sandbox.git
+[submodule "mitmproxy-dev-sandbox"]
+	path = mitmproxy-dev-sandbox
+	url = git@github.com:jelearn/mitmproxy-dev-sandbox.git
