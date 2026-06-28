@@ -26,6 +26,10 @@ Other inspiration:
 
 - Provide ability to re-use read-only mounts for Agent configs and MITM Proxy?
     - i.e. re-use accounts when desired
+- Make display and Code Server IDE optional via configuration?
+    - Also, auto select and save per-project display ports in global config?
+- Have a user-home directory global config, which can be overriden with per
+  project/workspace config?
 
 Conflicting design choices:
 
