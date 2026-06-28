@@ -12,11 +12,12 @@ The submodules are read-only references. Nothing in them is modified here.
 
 | File | Purpose |
 |------|---------|
+| [comparison.md](comparison.md) | Side-by-side comparison and synthesis opportunities |
+| [highlights-gcs.md](highlights-gcs.md) | Covers high-level improvements for MITMProxy Dev Sandbox based on Grepular Claude Sandbox's design and implementation. |
 | [grepular-claude-sandbox.md](grepular-claude-sandbox.md) | Deep analysis of the gcs project: architecture, features, strengths, gaps |
 | [mitmproxy-dev-sandbox.md](mitmproxy-dev-sandbox.md) | Deep analysis of the mds project: architecture, features, strengths, gaps |
-| [comparison.md](comparison.md) | Side-by-side comparison and synthesis opportunities |
 
 ## Reading Order
 
-For humans new to the project: start with the comparison, then dive into the individual notes
-for depth. For AI agents: read all three before proposing any design work.
+For humans new to the project: start with the comparison, then dive into the other  notes
+for depth. For AI agents: read all referenced files before proposing any design work.
