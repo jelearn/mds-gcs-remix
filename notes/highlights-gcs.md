@@ -4,6 +4,7 @@ Interesting design/implementation take-aways from Grepular Claude Sandbox:
 
 - Single-executable deployment pattern (vs. repo cloning).
     - Incl. Python probably more maintainable/flexible vs. Bash
+    - Potentially make it a full Python project.
 - Per-workspace config file for per-project adjustments.
     - Incl. better proxy rule configuration that is more easily ajusted per project.
     - This is great to quickly spinning-up temporary/adhoc workspaces.
@@ -22,7 +23,7 @@ Interesting design/implementation take-aways from Grepular Claude Sandbox:
   of trust given of guest user account.
 - Actually has tests and a build pipeline.
 
-Other inspiration:
+Other inspiration/ideas:
 
 - Provide ability to re-use read-only mounts for Agent configs and MITM Proxy?
     - i.e. re-use accounts when desired
@@ -30,6 +31,8 @@ Other inspiration:
     - Also, auto select and save per-project display ports in global config?
 - Have a user-home directory global config, which can be overriden with per
   project/workspace config?
+- Is there any value/benefit to binding directly to podman API instead of
+  relying on command-line?
 
 Conflicting design choices:
 
