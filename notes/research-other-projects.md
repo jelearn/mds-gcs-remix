@@ -7,6 +7,8 @@ elsewhere — with licensing as a key constraint.
 
 Assistant: Claude Opus 4.8 (Anthropic)
 
+It also contains additional information added after further reading.
+
 ---
 
 ## Turn 1
@@ -31,7 +33,7 @@ Similar projects, grouped by how closely they match the original's core combinat
   request-aware rules and blocks non-matching traffic with 403, while an iptables firewall blocks all
   direct outbound from the agent container so nothing bypasses the proxy. Supports Claude Code and
   other agents via CLI or devcontainers. Probably the single closest analog.
-- **Airut `airut-sandbox`** (from the [haulos.com writeup][airut]) — runs each task in a rootless
+- [**Airut `airut-sandbox`**][airut-sandbox] (from the [haulos.com writeup][airut]) — runs each task in a rootless
   Podman container on an internal network with no direct internet access, routing all HTTP(S)
   transparently through mitmproxy enforcing a domain allowlist, plus a custom DNS responder that
   blocks DNS exfiltration. Same Podman + mitmproxy foundation, oriented toward CI/GitHub Actions.
@@ -48,8 +50,11 @@ Similar projects, grouped by how closely they match the original's core combinat
 
 **Agent container/VM sandboxes (isolation-focused, lighter on the proxy)**
 
-- [**textcortex/claude-code-sandbox**][cc-sandbox] — runs Claude Code in isolated Docker (or Podman)
-  containers with a browser-based terminal. (Archived; continued as "Spritz.")
+- [**textcortex/spritz**][spritz]: Spritz is a self-hosted control plane for spawning
+  isolated agent instances on Kubernetes.  Mentioned because it's a successor to:
+    - [**textcortex/claude-code-sandbox**][cc-sandbox] — runs Claude Code in
+      isolated Docker (or Podman) containers with a browser-based terminal.
+      (Archived; continued as "Spritz.")
 - [**streamingfast/sbox**][sbox] — a Docker sandbox/MicroVM wrapper for Claude Code and OpenCode that
   bridges your `~/.claude` config into the isolated environment.
 - [**webcoyote/clodpod**][clodpod] — runs AI agents (Claude Code, Codex, Gemini, Cursor Agent)
@@ -182,18 +187,6 @@ narrow case of genuinely lifting gcs source.
 
 ---
 
-## Turn 3
-
-### User
-
-> Could you please create a single Markdown file, with link references, of this entire conversation?
-
-### Assistant
-
-(This document.)
-
----
-
 ## References
 
 ### Primary projects
@@ -205,6 +198,7 @@ narrow case of genuinely lifting gcs source.
 [agent-vault]: https://github.com/Infisical/agent-vault
 [clawker]: https://github.com/schmitthub/clawker
 [pipelock]: https://github.com/luckyPipewrench/pipelock
+[spritz]: https://github.com/textcortex/spritz
 [cc-sandbox]: https://github.com/textcortex/claude-code-sandbox
 [sbox]: https://github.com/streamingfast/sbox
 [clodpod]: https://github.com/webcoyote/clodpod
@@ -232,6 +226,7 @@ narrow case of genuinely lifting gcs source.
 ### Articles & documentation
 
 [airut]: https://haulos.com/blog/sandboxing-github-actions/
+[airut-sandbox]: https://github.com/airutorg/airut
 [openclaw]: https://docs.openclaw.ai/gateway/sandboxing
 [secure-deploy]: https://code.claude.com/docs/en/agent-sdk/secure-deployment
 [cc-sandboxing]: https://www.anthropic.com/engineering/claude-code-sandboxing

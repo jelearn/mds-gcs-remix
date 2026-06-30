@@ -1,6 +1,30 @@
 [submodule "grepular-claude-sandbox"]
-	path = grepular-claude-sandbox
+	path = reference-projects/grepular-claude-sandbox
 	url = https://gitlab.com/grepular/claude-sandbox.git
 [submodule "mitmproxy-dev-sandbox"]
-	path = mitmproxy-dev-sandbox
+	path = reference-projects/mitmproxy-dev-sandbox
 	url = git@github.com:jelearn/mitmproxy-dev-sandbox.git
+[submodule "mattolson-agent-sandbox"]
+	path = reference-projects/mattolson-agent-sandbox
+	url = https://github.com/mattolson/agent-sandbox.git
+[submodule "airutorg-airut"]
+	path = reference-projects/airutorg-airut
+	url = https://github.com/airutorg/airut.git
+[submodule "schmitthub-clawker"]
+	path = reference-projects/schmitthub-clawker
+	url = https://github.com/schmitthub/clawker.git
+[submodule "Infisical-agent-vault"]
+	path = reference-projects/Infisical-agent-vault
+	url = https://github.com/Infisical/agent-vault.git
+[submodule "luckyPipewrench-pipelock"]
+	path = reference-projects/luckyPipewrench-pipelock
+	url = https://github.com/luckyPipewrench/pipelock.git
+[submodule "webcoyote-clodpod"]
+	path = reference-projects/webcoyote-clodpod
+	url = https://github.com/webcoyote/clodpod.git
+[submodule "textcortex-spritz"]
+	path = reference-projects/textcortex-spritz
+	url = https://github.com/textcortex/spritz.git
+[submodule "streamingfast-sbox"]
+	path = reference-projects/streamingfast-sbox
+	url = https://github.com/streamingfast/sbox.git
